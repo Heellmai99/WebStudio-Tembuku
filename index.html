@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Pembuatan Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- navbar -->
+<nav class="navbar">
+    <div class="logo">WebStudio Tembuku</div>
+    <ul class="nav-links">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#keunggulan">Keunggulan</a></li>
+        <li><a href="#services">Layanan</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" class="btn-nav">Kontak</a></li>
+    </ul>
+</nav>
+
+<!-- popup -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h3>Pesan Terkirim</h3>
+        <p id="popup-message"></p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<body id="home">
+
+    <header>
+        <h1>Bikin Bisnismu Makin Laris dengan Website <br>
+            Profesional untuk UMKM & Corporate</h1><br>
+        <p>Kamu bisa punya website keren & professional dengan domain resmi, optimasi SEO, dan desain mobile-friendly <br> yang siap menarik lebih banyak pelanggan!</p>
+        <button onclick="scrollToContact()">Hubungi Kami</button>
+    </header>
+
+    <br><br><br><br id="keunggulan"><br>
+
+    <section class="features">
+    <div class="features-left">
+        <span class="badge">KEUNGGULAN KAMI</span>
+        <h2>Fitur Lengkap untuk Hasil Maksimal</h2>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <i>📊</i>
+                <h3>SEO Optimized</h3>
+                <p>Optimasi SEO onpage membantu website Anda tampil di halaman depan pencarian.</p>
+            </div>
+
+            <div class="feature-card">
+                <i>📱</i>
+                <h3>Mobile Friendly</h3>
+                <p>Website tampil sempurna di semua perangkat, nyaman untuk pelanggan.</p>
+            </div>
+
+            <div class="feature-card">
+                <i>🌐</i>
+                <h3>Free Google Ads Setup</h3>
+                <p>Kami bantu setup awal Google Ads tanpa biaya tambahan.</p>
+            </div>
+
+            <div class="feature-card">
+                <i>🎨</i>
+                <h3>Desain Profesional</h3>
+                <p>Desain modern, user-friendly, dan meningkatkan kepercayaan bisnis.</p>
+            </div>
+
+            <div class="feature-card">
+                <i>🛠️</i>
+                <h3>Lifetime Support</h3>
+                <p>Dukungan setelah website live, update minor & monitoring.</p>
+            </div>
+
+            <div class="feature-card">
+                <i>🔗</i>
+                <h3>Integrasi Sosial Media</h3>
+                <p>Terhubung langsung ke Instagram, Facebook, dan WhatsApp.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-right">
+        <div class="overlay">
+            <img src="asset/phone.png" alt="Website Preview">
+        </div>
+    </div>
+</section>
+
+<br><br id="services"><br><br><br>
+
+    <section class="services">
+        <h2>Layanan Kami</h2>
+        <div class="service-list">
+            <div class="card">Website Company Profile</div>
+            <div class="card">Landing Page</div>
+            <div class="card">Website UMKM</div>
+            <div class="card">Website Custom</div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2>Paket Harga</h2>
+        <ul>
+            <li>Basic: Rp 500.000</li>
+            <li>Standard: Rp 1.500.000</li>
+            <li>Premium: Rp 3.000.000</li>
+        </ul>
+    </section>
+
+<br id="faq">
+
+    <section class="faq">
+    <span class="faq-badge">PERTANYAAN UMUM</span>
+    <h2>Pertanyaan yang Sering Ditanyakan sebelum<br>Membuat Website</h2>
+
+    <div class="faq-container">
+        <!-- LEFT -->
+        <div class="faq-column">
+            <div class="faq-item">
+                <button class="faq-question">
+                    Apa yang akan saya dapatkan dari website buatan Jasa Web Creator?
+                    <span class="icon">×</span>
+                </button>
+                <div class="faq-answer">
+                    Anda akan mendapatkan website profesional lengkap: domain .com gratis,
+                    desain modern, SEO-friendly, mobile responsive, dan lifetime support.
+                    Semua sudah termasuk — tidak ada biaya tersembunyi!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Seberapa Cepat Website Saya Bisa Online?
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Website biasanya online dalam 3–7 hari kerja tergantung kompleksitas dan
+                    kelengkapan data dari klien.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Apakah Website Yang Dibuat Sudah Optimal Untuk Smartphone?
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Ya, semua website kami dibuat responsive dan optimal di semua perangkat.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Apakah saya bisa mengelola konten sendiri setelah website selesai?
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Bisa. Kami menyediakan dashboard admin yang mudah digunakan.
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="faq-column">
+            <div class="faq-item">
+                <button class="faq-question">
+                    Apakah sudah termasuk layanan SEO supaya website mudah ditemukan di Google?
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Ya, kami menyediakan SEO On-Page dasar agar website mudah ditemukan.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Apa yang terjadi setelah website live? Apakah ada support lanjutan?
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Kami tetap memberikan support dan maintenance sesuai paket.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Apakah saya bisa langsung pasang iklan setelah website jadi?
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Bisa. Kami bantu setup awal Google Ads tanpa biaya tambahan.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Apakah layanan ini hanya tersedia untuk bisnis di Bali?
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Tidak. Kami melayani seluruh Indonesia.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="contact" id="contact">
+        <h2>Hubungi Kami</h2>
+        <form onsubmit="sendMessage(event)">
+            <input type="text" id="name" placeholder="Nama" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Pesan" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+        <p id="alert"></p>
+    </section>
+<footer class="footer">
+    <div class="footer-top">
+        <!-- BRAND -->
+        <div class="footer-brand">
+            <h2>WebStudio Tembuku</h2>
+            <p>
+                Dapatkan website profesional mulai 1.250K, termasuk domain,
+                SEO onpage, dan desain mobile-friendly. <br>
+                Cocok untuk pengusaha mikro dengan budget terbatas.
+            </p>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>📍 Jl. Kresna No.87A, Yangapi, Kec. Tembuku, Kabupaten Bangli, Bali</li>
+                <li><a href="https://api.whatsapp.com/send?phone=628990420398&text=Hello%2C%20I%20got%20this%20number%20from%20the%20website%20https://promo.jasawebcreator.com/%20I%E2%80%99d%20like%20to%20ask%20something%20can%20you%20help%20me%3F">📞 +628990420398</a></li>
+                <li><a href="mailto:heellmai99@gmail.com">✉️ heellmai99@gmail.com</a></li>
+            </ul>
+            
+
+            <div class="social">
+                
+            </div>
+        </div>
+
+        <!-- MAP -->
+        <div class="footer-map">
+            <h3>Lokasi Kantor</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.0462390000926!2d115.38149720000001!3d-8.397113199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd21bffa03e0e0b%3A0x69e0ab4941462a0a!2zWWF5YXNhbiBEd2lwYWhhcmEgQmFsaSAo5pel5pys6Kqe5a2m5qCh44O744OI44Os44O844OL44Oz44Kw44K744Oz44K_44O8IOODkOODquWztuacgOWIneOBrumAgeOCiuWHuuOBl-apn-mWoik!5e0!3m2!1sid!2sid!4v1768375481892!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © Copyright 2026 WebStudio Tembuku. All Rights Reserved.
+        Powered By <strong>WebStudio Tembuku</strong>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
