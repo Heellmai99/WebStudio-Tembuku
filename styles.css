@@ -47,11 +47,56 @@ html {
 }
 
 .btn-nav {
-    padding: 8px 16px;
-    background: #007bff;
+    padding: 8px 14px;
+    background: #000;
     color: #fff !important;
     border-radius: 6px;
 }
+
+/* HAMBURGER */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #000;
+    transition: 0.3s;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0;
+        gap: 20px;
+        align-items: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+        transform: translateY(-120%);
+        transition: 0.3s ease;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+    }
+}
+
 
 
 body {
@@ -464,3 +509,4 @@ margin-top: 10%;
         padding: 50px 30px;
     }
 }
+
